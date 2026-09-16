@@ -1,0 +1,138 @@
+/* body */
+body {
+  background-color: #b7e9b3;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.app-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+/*CUADRÍCULA*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #3a8a21;
+  margin-bottom: 20px;
+}
+
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 210px) !important;
+  gap: 5px;
+  justify-content: center;
+}
+
+.character-card {
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.character-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-color, #ffffff);
+}
+
+.character-card img {
+  width: 200px;
+  height: 200px;
+}
+
+/*DETALLES*/
+.character-detail {
+  position: relative;
+  width: 100%;
+}
+
+.header-color {
+  width: 100%;
+  background-color: color-mix(in srgb, var(--accent-color, #3a8a21) 25%, #000000);
+  border-bottom: 2px solid var(--accent-color, #3a8a21);
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.back-button {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.back-button:hover {
+  background: #a19999;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .detail-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+/* Columna Izquierda: Info y Título */
+.info-column {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.info-column h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  color: var(--accent-color, #1b4d0e);
+  border-left: 5px solid var(--accent-color, #3a8a21);
+  padding-left: 12px;
+}
+
+.version-info {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.version-info p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Columna Derecha: Imagen */
+.visual-column {
+  flex: 1.4;
+  display: flex;
+  justify-content: center;
+  background: #000000;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.fullbody-image {
+  width: auto;
+  max-width: 100%;
+  max-height: 600px;
+  object-fit: contain;
+}
