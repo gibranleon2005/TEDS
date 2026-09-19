@@ -1,0 +1,21 @@
+:root {
+  --bg: #36494E;
+  --border: #36494E;
+  background: var(--bg); /* color fondo fuera de caja principal */
+  border: var(--bg);     /* color borde fuera de caja principal */
+}
+
+#root {
+  width: 1150px;         /* tamano caja principal */
+  margin: auto;          /* ajustar margenes al centro */
+  text-align: center;    /* ajustar texto al centro */
+  border-inline: 1px solid var(--border); /* ajustar grosor borde */
+  min-height: 100svh;    /* tamano de altura minimo al cargar pagina */
+  display: flex;         /* modo de display */
+  flex-direction: column;/* display arriba a abajo */
+  background: #A9CEF4; /* color fondo dentro caja principal */
+}
+
+p {
+  margin: 0;             /* quitar margen salto de linea */
+}
