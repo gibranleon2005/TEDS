@@ -1,3 +1,4 @@
 # WebApp Ubika
-(Backend)Javascript -> (Frontend)React + Vite
+NUEVA PAGINA DE INICIO
+(Backend) Javascript -> (Frontend) React + Vite.
 Web app con sistema para gestionar objetos perdidos en UABC.
