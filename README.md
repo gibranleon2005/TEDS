@@ -1,2 +1,3 @@
 # TEDS
-Web app para gestionar objetos perdidos
+PRIMER AVANCE ENVIADO
+Web app para gestionar objetos perdidos.
